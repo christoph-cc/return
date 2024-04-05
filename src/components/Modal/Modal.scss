@@ -1,6 +1,26 @@
 @use "../../partials/variables.scss" as *;
 @use "../../partials/mixins.scss" as *;
 
+h2 {
+  padding-bottom: 1rem;
+}
+
+input, select {
+  width: auto;
+  padding: 0rem 0.5rem;
+  height:2rem;
+  border-radius: 5px;
+  border: 0.5px solid rgb(168, 168, 168)
+}
+
+.modaldiv {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.3rem;
+  align-items: center;
+
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -9,6 +29,10 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+}
+
+.modal_add-text {
+  color: grey;
 }
 
 .close-modal {
@@ -43,11 +67,11 @@
   background-color: white;
 
   @include tablet {
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 50vh;
+    height: 82vh;
 
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -59,7 +83,7 @@
 }
 
 .modal-text {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .modal-para {
@@ -73,25 +97,24 @@
   gap: 1rem;
   align-items: center;
   width: 100%;
-  padding-right: 2rem;
   margin-bottom: 1rem;
 
   @include tablet {
     text-align: right;
     justify-content: flex-end;
     width: 95%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
 .delete-button {
   width: 100%;
-  height: 36px;
+  height: 45px;
   padding: 0.5rem 1rem;
-  background-color: #c94515;
+  background-color: #1773B0;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
 
   @include tablet {
@@ -101,5 +124,5 @@
 }
 
 .delete-button:hover {
-  background-color: #b43f14;
+  background-color: #106298;
 }
