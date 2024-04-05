@@ -15,19 +15,19 @@ export default function Home() {
   const [showComponent, setShowComponent] = useState(false);
   const [passedInfo, setPassedInfo] = useState({});
 
-  useEffect(() => {
-    const fetchWarehouseData = async () => {
-      try {
-        // const getWarehouse = await axios.get(
-        //   "http://localhost:5050/api/warehouses"
-        // );
-        // setWarehouse(getWarehouse.data);
-      } catch (error) {
-        alert(error);
-      }
-    };
-    fetchWarehouseData();
-  }, [showModal]);
+  // useEffect(() => {
+  //   const fetchWarehouseData = async () => {
+  //     try {
+  //       // const getWarehouse = await axios.get(
+  //       //   "http://localhost:5050/api/warehouses"
+  //       // );
+  //       // setWarehouse(getWarehouse.data);
+  //     } catch (error) {
+  //       alert(error);
+  //     }
+  //   };
+  //   fetchWarehouseData();
+  // }, [showModal]);
 
   const deleteHandler = () => {
     setShowModal(true);
