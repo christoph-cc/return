@@ -1,11 +1,13 @@
 @use "../../partials/variables.scss" as *;
 @use "../../partials/mixins.scss" as *;
 
-button {
-background: #FFFFFF;
-border-radius: 8px;
-height: 18px;
-color: #303030;
-font-size: 12px;
-line-height: 150%;
+.button-comp {
+  border: 1px solid #b5b5b5;
+  background-color: white;
+  color: #303030;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 10px;
+  height: 2rem;
+  box-sizing: border-box;
 }
