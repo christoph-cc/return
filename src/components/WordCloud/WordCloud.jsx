@@ -10,7 +10,7 @@ const data = [
   { value: "Express.js", count: 25 },
   { value: "HTML5", count: 33 },
   { value: "CSS3", count: 20 },
-  { value: "Webpack", count: 22 },
+  { value: "Too Small", count: 22 },
   { value: "Babel.js", count: 7 },
   { value: "ECMAScript", count: 25 },
   { value: "Jest", count: 15 },
