@@ -1,0 +1,11 @@
+@use "../../partials/variables.scss" as *;
+@use "../../partials/mixins.scss" as *;
+
+button {
+background: #FFFFFF;
+border-radius: 8px;
+height: 18px;
+color: #303030;
+font-size: 12px;
+line-height: 150%;
+}
