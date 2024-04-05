@@ -1,26 +1,23 @@
 import React from "react";
 import { TagCloud } from "react-tagcloud";
+import './WorldCloud.scss';
+
+
 
 const data = [
-  { value: "jQuery", count: 25 },
-  { value: "MongoDB", count: 18 },
-  { value: "JavaScript", count: 55 },
-  { value: "React", count: 30 },
-  { value: "Nodejs", count: 28 },
-  { value: "Express.js", count: 25 },
-  { value: "HTML5", count: 33 },
-  { value: "CSS3", count: 20 },
+  { value: "Wrong item", count: 25 },
+  { value: "Uncomfortable", count: 18 },
+  { value: "Inaccurate description", count: 55 },
+  { value: "Material", count: 30 },
+  { value: "Change of mind", count: 28 },
+  { value: "Allergic reaction", count: 25 },
+  { value: "Received as a duplicate", count: 33 },
+  { value: "Comfort", count: 20 },
   { value: "Too Small", count: 22 },
-  { value: "Babel.js", count: 7 },
-  { value: "ECMAScript", count: 25 },
-  { value: "Jest", count: 15 },
-  { value: "Mocha", count: 17 },
-  { value: "React Native", count: 27 },
-  { value: "Angular.js", count: 30 },
-  { value: "TypeScript", count: 15 },
-  { value: "Flow", count: 30 },
-  { value: "NPM", count: 11 },
+  { value: "Style", count: 7 },
+  { value: "Color", count: 25 },
 ];
+
 
 // custom random color options
 // see randomColor package: https://github.com/davidmerfield/randomColor
@@ -32,8 +29,9 @@ const options = {
 export default function WordCloud() {
   return (
     <TagCloud
+    className="cloud"
       minSize={12}
-      maxSize={100}
+      maxSize={35}
       colorOptions={options}
       tags={data}
       onClick={(tag) => console.log("clicking on tag:", tag)}
