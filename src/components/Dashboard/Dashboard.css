@@ -1,0 +1,13 @@
+.dashboard-container {
+  width: 80%;
+  display: flex;
+  justify-items: end;
+  margin-left: 240px;
+  justify-content: center;
+  padding-top: 53px;
+  margin-top: 150px;
+}
+
+.dashboard-content-container {
+  padding: 0 150px;
+}/*# sourceMappingURL=Dashboard.css.map */
