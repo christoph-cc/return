@@ -23,12 +23,15 @@ export default function Dashboard() {
         <div className="conditions-container">
           <div className="conditions-text">
             <p className="conditions-text__header">Automated Conditions</p>
-            <p className="conditions-text__body">
-              You don't have any approval conditions applied
-            </p>
+            <p className="conditions-text__body">Blue Nike Sweatshirt Return</p>
           </div>
           <Button
             text="Add new condition"
+            name="conditions-text__button"
+            onClick={deleteHandler}
+          />
+          <Button
+            text="View All Conditions"
             name="conditions-text__button"
             onClick={deleteHandler}
           />
@@ -48,7 +51,9 @@ export default function Dashboard() {
           </div>
 
           <div className="analytics-body">
-            <div className="wordcloud-map"><WordCloud /></div>
+            <div className="wordcloud-map">
+              <WordCloud />
+            </div>
             <div className="analytics-subbody2">
               <div className="return-rate"></div>
               <div className="time-approve"></div>

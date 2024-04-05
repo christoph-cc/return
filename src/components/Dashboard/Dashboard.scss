@@ -40,9 +40,12 @@
   &__body {
     font-size: 1rem;
     font-weight: 400;
+    border-bottom: 1px black solid;
+    width: 50%;
   }
   &__button {
-    width: 22%;
+    width: 30%;
+    margin-right: 10px;
   }
 }
 
