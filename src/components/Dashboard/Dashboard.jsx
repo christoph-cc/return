@@ -48,7 +48,7 @@ export default function Dashboard() {
           </div>
 
           <div className="analytics-body">
-            <div className="wordcloud-map">{/* <WordCloud /> */}</div>
+            <div className="wordcloud-map"><WordCloud /></div>
             <div className="analytics-subbody2">
               <div className="return-rate"></div>
               <div className="time-approve"></div>

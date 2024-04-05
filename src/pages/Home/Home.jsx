@@ -45,8 +45,6 @@ export default function Home() {
         passedInfo={passedInfo}
       />
       <Dashboard />
-      <Button onClick={deleteHandler}>Button</Button>
-      <button>Class Test</button>
     </>
   );
 }
